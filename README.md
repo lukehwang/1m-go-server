@@ -12,7 +12,7 @@ cd simple_server
 go run server.go
 ```
 
-Open http://localhost:8000
+Open Browser http://localhost:8000
 
 
 ## 2. Simple Websocket Server
@@ -34,3 +34,10 @@ go run client.go
 go run server.go
 Set Limit 10496 -> 65536
 ```
+
+## 4. Use pprof
+
+go tool pprof http://localhost:6060/debug/pprof/heap
+or
+Open Browser http://localhost:6060/debug/pprof/
+
