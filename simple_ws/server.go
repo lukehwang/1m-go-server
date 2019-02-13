@@ -21,6 +21,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	for {
 		_, msg, err := conn.ReadMessage()
 		if err != nil {
+			log.Printf("Failed to read message %v", err)
 			conn.Close()
 			return
 		}
